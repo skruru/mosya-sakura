@@ -1,0 +1,110 @@
+/* 共通 */
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.pd10 {
+  padding: 10px;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header_logo {
+  line-height: 75px;
+}
+.header_logo img {
+  width: 50px;
+}
+.header_seach {
+  line-height: 75px;
+  margin: 0 10px;
+}
+.header_seach img{
+  width: 25px;
+}
+.gnav {
+  display: flex;
+  justify-content: space-between;
+}
+.gnav_lists {
+  display: flex;
+  align-items: center;
+}
+.header_link {
+  width: 40px;
+  height: 40px;
+  background: #aaaaaa;
+  border-radius: 50%;
+  margin: 15px 20px 0;
+  font-weight: bold;
+}
+.header_link a {
+  text-align: center;
+  display: block;
+  color: #fff;
+  line-height: 40px;
+}
+.gnav_list {
+  padding: 20px;
+}
+.gnav_list a {
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+}
+.gnav_list a::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  display: block;
+  opacity: 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  transform: scaleX(0);
+}
+.gnav_list:nth-child(1) a::after {
+  background: #ff0000;
+}
+.gnav_list:nth-child(2) a::after {
+  background: #ff8800;
+}
+.gnav_list:nth-child(3) a::after {
+  background: #fffb00;
+}
+.gnav_list:nth-child(4) a::after {
+  background: #48ff00;
+}
+.gnav_list:nth-child(5) a::after {
+  background: #00eeff;
+}
+.gnav_list:nth-child(6) a::after {
+  background: #1100ff;
+}
+.gnav_list:nth-child(7) a::after {
+  background: #ae00ff;
+}
+.gnav_list.show a::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.header_btn {
+  background: #ff0000;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 10px;
+  height: 60px;
+  margin-top: 7px;
+}
